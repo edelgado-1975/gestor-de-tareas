@@ -7,7 +7,7 @@ import AuthContext from '../context/AuthContext';
 const Login = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const { setAuth, setCargando } = useContext(AuthContext); 
+    const { setAuth, setCargando } = useContext(AuthContext);
     const navigate = useNavigate();
 
     const handleSubmit = async (e) => {
@@ -19,7 +19,7 @@ const Login = () => {
         }
 
         try {
-            setCargando(true); 
+            setCargando(true);
 
             const { data } = await axiosClient.post('/usuarios/login', { email, password });
             localStorage.setItem('token', data.token);

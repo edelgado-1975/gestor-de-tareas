@@ -5,7 +5,7 @@ const AuthLayout = () => {
   return (
     <div className={styles.background}>
       <div className={styles.container}>
-        <Outlet /> {}
+        <Outlet />
       </div>
     </div>
   );

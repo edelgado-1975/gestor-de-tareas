@@ -8,18 +8,15 @@ const Header = () => {
     const navigate = useNavigate();
 
     const handleLogout = () => {
-
         localStorage.removeItem('token');
-
         setAuth({});
-
         navigate('/');
     };
 
     return (
         <header className={styles.header}>
             <div className={styles.headerContent}>
-                <p>Bienvenido de vuelta  <span>{auth.nombre}</span></p>
+                <p>¡Bienvenido <span>{auth.nombre}</span>!</p>
                 <button
                     className={styles.logoutBtn}
                     onClick={handleLogout}

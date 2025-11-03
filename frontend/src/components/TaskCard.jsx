@@ -1,4 +1,4 @@
-import { Draggable } from '@hello-pangea/dnd'; 
+import { Draggable } from '@hello-pangea/dnd';
 import styles from './TaskCard.module.css';
 
 const TaskCard = ({ task, onCardClick, onDeleteTask, index }) => {
