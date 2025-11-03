@@ -1,0 +1,29 @@
+.boardContainer {
+  padding: 20px;
+}
+
+.board {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 20px;
+  overflow-x: auto; 
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.createTaskBtn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.createTaskBtn:hover {
+  background-color: #0056b3;
+}
