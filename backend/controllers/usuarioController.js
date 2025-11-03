@@ -42,7 +42,6 @@ const loginUsuario = async (req, res) => {
             }
         };
 
-        console.log('SECRETO AL FIRMAR:', process.env.JWT_SECRET);
         jwt.sign(payload, process.env.JWT_SECRET, {
             expiresIn: 3600
         }, (error, token) => {

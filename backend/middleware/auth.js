@@ -8,7 +8,6 @@ module.exports = function(req, res, next) {
     }
 
     try {
-        console.log('SECRETO AL VERIFICAR:', process.env.JWT_SECRET);
         const cifrado = jwt.verify(token, process.env.JWT_SECRET);
         req.usuario = cifrado.usuario;
         next();
